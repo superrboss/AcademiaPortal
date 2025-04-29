@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/am/AcademiaPortal-main/AcademiaPortal/bin/Debug/net8.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
+/am/AcademiaPortal-main/.vs/AcademiaPortal/config
+/am/AcademiaPortal-main/.vs/AcademiaPortal/CopilotIndices/0.2.1653.9816/CodeChunks.db
+/am/AcademiaPortal-main/.vs/AcademiaPortal/CopilotIndices/0.2.1653.9816/CodeChunks.db-wal
+/am/AcademiaPortal-main/.vs/AcademiaPortal/CopilotIndices/0.2.1653.9816/SemanticSymbols.db-wal
+/am/AcademiaPortal-main/.vs/AcademiaPortal/DesignTimeBuild
+/am/AcademiaPortal-main/.vs/AcademiaPortal/FileContentIndex
+/am/AcademiaPortal-main/.vs/AcademiaPortal/v17
