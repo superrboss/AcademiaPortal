@@ -33,8 +33,9 @@ namespace AcademiaPortal.Controllers
         {
             if (doctorDTO == null)
                 return BadRequest("Doctor data is null");
-
-
+            // Hash password before mapping
+            doctorDTO.Password = HelpPassword.Hash(doctorDTO.Password);
+            
             var newDoc = _AutoMap.Map<Doctor>(doctorDTO);
 
             bool result = await _mediatr.Send(new InsertDoctorsCommand(newDoc)); 

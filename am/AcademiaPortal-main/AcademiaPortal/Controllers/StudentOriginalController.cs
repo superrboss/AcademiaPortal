@@ -2,6 +2,7 @@
 using AcademiaPortal.Core.Interfaces;
 using AcademiaPortal.Core.Models;
 using AcademiaPortal.Core.Services;
+using AcademiaPortal.Filter;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.RateLimiting;
@@ -29,6 +30,8 @@ namespace AcademiaPortal.Controllers
 
             if (newstudent == null)
                 return BadRequest("Student data is null");
+            // Hash password before mapping
+            newstudent.Password = HelpPassword.Hash(newstudent.Password);
 
             var student = _automap.Map<Student>(newstudent);
             bool result = await _studentService.RegisterStudent(student);
@@ -60,7 +63,7 @@ namespace AcademiaPortal.Controllers
             return Ok($"email = {email}  UserId= {UserId} MyRole= {MyRole}");
         }
         [EnableRateLimiting("fixed")]
-
+        [CheckAuthorizeRole("Admin")]
         [HttpGet("AllStudents")]
         public async Task<IActionResult> GetAllStudents()
         {

@@ -46,8 +46,10 @@ namespace AcademiaPortal.Controllers
         [HttpPost("AddSubject")]
         public async Task<IActionResult> AddSubject([FromBody] SubjectDTO subject)
         {
+
             if (subject == null)
                 return BadRequest("Subject data is null");
+            
             var newSubject = _automap.Map<Subject>(subject);
             bool result = await _services.AddSubject(newSubject);
             return result ? Ok("Subject added successfully") : BadRequest("Failed to add subject");

@@ -59,8 +59,9 @@ namespace AcademiaPortal.Data.Implements
         {
          Student SerachAboutStudent= await GetStudentByEmail(email);
             if (SerachAboutStudent == null)
-           
-            if (HelpPassword.Verify(password, SerachAboutStudent.Password))
+                return "NotFound this SerachAboutStudent";
+
+            if (!HelpPassword.Verify(password, SerachAboutStudent.Password))
                 return "Error Password";
 
             TokenServices tokenService = new TokenServices(_jwt);

@@ -94,7 +94,7 @@ namespace AcademiaPortal.Data.Implements
             if (SerachAboutDoctor == null)
                 return "NotFound this SerachAboutDoctor";
            
-            if (HelpPassword.Verify(password, SerachAboutDoctor.Password))
+            if (!HelpPassword.Verify(password, SerachAboutDoctor.Password))
                 return "Error Password";
 
             TokenServices tokenService = new TokenServices(_jwt);
