@@ -1,0 +1,447 @@
+[
+  {
+    "ContainingType": "AcademiaPortal.Controllers.AdminsController",
+    "Method": "Login",
+    "RelativePath": "api/v1/Admins/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.DoctorsController",
+    "Method": "AddDoctor",
+    "RelativePath": "api/v1/Doctors/AddDoctor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorDTO",
+        "Type": "AcademiaPortal.Core.DTO.DoctorDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.DoctorsController",
+    "Method": "DeletedDoctorById",
+    "RelativePath": "api/v1/Doctors/DeletedById/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.DoctorsController",
+    "Method": "EditDoctor",
+    "RelativePath": "api/v1/Doctors/EditDoctor/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "DoctorEdit",
+        "Type": "AcademiaPortal.Core.DTO.DoctorDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.DoctorsController",
+    "Method": "GetAllDoctor",
+    "RelativePath": "api/v1/Doctors/GetAllDoctor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.DoctorsController",
+    "Method": "GetAllMyStudents",
+    "RelativePath": "api/v1/Doctors/GetAllMyStudents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.DoctorsController",
+    "Method": "GetClaimByHeader",
+    "RelativePath": "api/v1/Doctors/GetClaim",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.DoctorsController",
+    "Method": "GetDoctorById",
+    "RelativePath": "api/v1/Doctors/GetDoctorById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.DoctorsController",
+    "Method": "GetDoctorByName",
+    "RelativePath": "api/v1/Doctors/GetDoctorByName/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.DoctorsController",
+    "Method": "Login",
+    "RelativePath": "api/v1/Doctors/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DoctorEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.StudentOriginalController",
+    "Method": "Registration",
+    "RelativePath": "api/v1/StudentOriginal",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newstudent",
+        "Type": "AcademiaPortal.Core.DTO.StudentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.StudentOriginalController",
+    "Method": "AllMyDoctors",
+    "RelativePath": "api/v1/StudentOriginal/AllMyDoctors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.StudentOriginalController",
+    "Method": "GetAllStudents",
+    "RelativePath": "api/v1/StudentOriginal/AllStudents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.StudentOriginalController",
+    "Method": "DeleteStudent",
+    "RelativePath": "api/v1/StudentOriginal/DeleteStudent/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.StudentOriginalController",
+    "Method": "EditStudent",
+    "RelativePath": "api/v1/StudentOriginal/EditStudent/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "studentEdit",
+        "Type": "AcademiaPortal.Core.DTO.StudentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.StudentOriginalController",
+    "Method": "GetClaimByHeader",
+    "RelativePath": "api/v1/StudentOriginal/GetClaim",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.StudentOriginalController",
+    "Method": "GetStudentByEmail",
+    "RelativePath": "api/v1/StudentOriginal/GetStudentByEmail/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.StudentOriginalController",
+    "Method": "GetStudentById",
+    "RelativePath": "api/v1/StudentOriginal/GetStudentById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.StudentOriginalController",
+    "Method": "GetStudentByName",
+    "RelativePath": "api/v1/StudentOriginal/GetStudentByName/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.StudentOriginalController",
+    "Method": "Login",
+    "RelativePath": "api/v1/StudentOriginal/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "StuedentEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.StudentOriginalController",
+    "Method": "RegisterSubjects",
+    "RelativePath": "api/v1/StudentOriginal/RegisterSubjects",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "subject_Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Versions.V1.StudentsController",
+    "Method": "GetAllStudents",
+    "RelativePath": "api/v1/Students",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.SubjectsController",
+    "Method": "AddSubject",
+    "RelativePath": "api/v1/Subjects/AddSubject",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "subject",
+        "Type": "AcademiaPortal.Core.DTO.SubjectDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.SubjectsController",
+    "Method": "DeleteSubjectById",
+    "RelativePath": "api/v1/Subjects/DeleteSubject/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.SubjectsController",
+    "Method": "GetAllMySubjects",
+    "RelativePath": "api/v1/Subjects/GetAllMySubjects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.SubjectsController",
+    "Method": "GetAllSubjects",
+    "RelativePath": "api/v1/Subjects/GetAllSubjects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.SubjectsController",
+    "Method": "GetSubjectbyDoctorId",
+    "RelativePath": "api/v1/Subjects/GetSubjectByDoctorid/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.SubjectsController",
+    "Method": "GetSubjectbyDoctorName",
+    "RelativePath": "api/v1/Subjects/GetSubjectByDoctorName/{Name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Controllers.SubjectsController",
+    "Method": "GetSubjectById",
+    "RelativePath": "api/v1/Subjects/GetSubjectById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademiaPortal.Versions.V2.StudentsController",
+    "Method": "GetAllStudentsv2",
+    "RelativePath": "api/v2/Students",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
